@@ -6,12 +6,12 @@ from llama_index.storage.kvstore.postgres import PostgresKVStore
 
 
 class PostgresDocumentStore(KVDocumentStore):
-    """Mongo Document (Node) store.
+    """Postgresql Document store.
 
-    A MongoDB store for Document and Node objects.
+    A Postgresql store for Document objects.
 
     Args:
-        mongo_kvstore (MongoDBKVStore): MongoDB key-value store
+        postgres_kvstore (PostgresKVStore): Postgresql key-value store
         namespace (str): namespace for the docstore
 
     """
